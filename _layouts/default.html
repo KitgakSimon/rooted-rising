@@ -2,7 +2,8 @@
 <html lang="en">
   {% include head.html %}
   <body class="bg-gray-100 text-gray-900">
-    <div class="">
+    <div id="loader" class="loader"></div>
+    <div class="content" style="display: none">
       {% include navbar.html %}
       <main class="">{{ content }}</main>
       {% include footer.html %}
@@ -10,5 +11,13 @@
     <button id="backToTop" class="top" title="Back to Top">Back to Top</button>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="/src/js/custom.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var loader = document.getElementById("loader");
+        var content = document.querySelector(".content");
+        loader.style.display = "none";
+        content.style.display = "block";
+      });
+    </script>
   </body>
 </html>
