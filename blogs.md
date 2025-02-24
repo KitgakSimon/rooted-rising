@@ -1,5 +1,5 @@
 ---
 layout: pages
-title: Blog Posts
+title: Blog Posts List
 permalink: /blogs/
 ---
