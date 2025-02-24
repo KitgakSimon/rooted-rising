@@ -1,11 +1,11 @@
 social_links:
-  - name: "Facebook"
-    url: "https://facebook.com/rootedrisinginitiative"
-    icon: "fab fa-facebook-f"
+  - name: "Youtube"
+    url: "https://www.youtube.com/@rootedrising"
+    icon: "fab fa-youtube"
 
-  - name: "Twitter"
-    url: "https://twitter.com/rootedrising"
-    icon: "fab fa-twitter"
+  - name: "TikTok"
+    url: "https://www.tiktok.com/@rootedrising?_t=ZM-8uA4DeB6J89&_r=1"
+    icon: "fab fa-tiktok"
 
   - name: "Instagram"
     url: "https://www.instagram.com/rootedrising1/"
