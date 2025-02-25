@@ -1,15 +1,15 @@
-main a img {
+.main-post a img {
   border: none;
   outline: none;
 }
 
-main figure {
+.main-post figure {
   display: block;
   background-color: #fff;
   -ms-interpolation-mode: bicubic;
 }
 
-main figure img {
+.main-post figure img {
   display: block;
   width: auto;
   max-width: 100%;
@@ -24,11 +24,11 @@ main figure img {
 
   --headings-color: #263358;
 
-  --main-bg-color: #fff;
+  --.main-post-bg-color: #fff;
   --secondary1-bg-color: #f6f6f6;
   --secondary2-bg-color: #fff0ec;
 
-  --main-txt-color: #333;
+  --.main-post-txt-color: #333;
   --secondary-txt-color: #757575;
 
   --sub-color: #b4b4b4;
@@ -62,11 +62,11 @@ h2 a {
   outline: none;
 }
 
-main a:hover {
+.main-post a:hover {
   color: var(--master-color-partner-dark);
 }
 
-main a:focus {
+.main-post a:focus {
   color: var(--headings-color);
   background-color: var(--secondary2-bg-color);
 }
@@ -79,7 +79,7 @@ body {
   height: 100%;
 }
 
-main {
+.main-post {
   min-height: 100vh;
   margin: 0 auto;
   max-width: 1200px;

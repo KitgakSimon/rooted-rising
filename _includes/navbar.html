@@ -1,100 +1,154 @@
-<!-- Navigation Bar -->
-<nav
-  class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4 shadow-md bg-white relative"
->
-  <!-- Logo Section -->
-  <div class="">
-    <a href="/" class="flex items-center space-x-1">
-      <img
-        src="{{site.logo}}"
-        alt="Rooted Rising Initiative"
-        class="h-13 w-13 rounded-full"
-      />
-      <span class="text-md font-bold">
-        Rooted Rising <br />
-        <span class="text-[#cd7704]">Initiative</span>
-      </span>
-    </a>
-  </div>
+<style>
+  .main-nav {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 1.5em 2em 0.5em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+  .container-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-bottom: 0.5em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+  .menu a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+  nav ul li {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5em;
+    transition: all 200ms ease;
+    cursor: pointer;
+  }
+  nav ul li:hover {
+    border-bottom: 2px solid black;
+  }
+  #burger {
+    display: none;
+  }
 
-  <!-- Hamburger Icon -->
-  <button
-    id="menu-toggle"
-    class="block md:hidden text-black focus:outline-none"
-  >
+  nav ul li.active {
+    color: #cd7704;
+    border-bottom: 2px solid black;
+  }
+
+  @media (max-width: 768px) {
+    #burger {
+      box-sizing: initial;
+      display: block;
+      width: 1rem;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 0.5em;
+    }
+    #burger:focus {
+      border: none;
+      outline: none;
+    }
+    nav {
+      position: absolute;
+      right: 0;
+      top: 3em;
+      background: #cd7704 !important;
+      min-width: 15em;
+      padding: 2em;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      clip-path: circle(0% at 100% 0);
+      transition: all 500ms ease-in-out;
+      z-index: 100;
+    }
+    nav.show {
+      clip-path: circle(200% at 100% 0);
+      transition-duration: 300ms;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .menu a {
+      color: white !important;
+    }
+    nav ul li.active {
+      color: white;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+</style>
+<main class="main-nav">
+  <div class="container-1">
+    <!-- Logo Section -->
+    <div class="">
+      <a href="/" class="flex items-center space-x-1">
+        <img
+          src="{{site.logo}}"
+          alt="Rooted Rising Initiative"
+          class="h-15 w-15 rounded-full"
+        />
+        <span class="text-md font-bold">
+          Rooted Rising <br />
+          <span class="text-[#cd7704]">Initiative</span>
+        </span>
+      </a>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li class="{% if page.url == '/' %}active{% endif %}">
+          <a href="/">Home</a>
+        </li>
+        <li class="{% if page.url == '/campaigns/' %}active{% endif %}">
+          <a href="/campaigns/">Campaigns</a>
+        </li>
+        <li class="{% if page.url == '/about-us/' %}active{% endif %}">
+          <a href="/about-us/">About Us</a>
+        </li>
+        <li class="{% if page.url == '/blogs/' %}active{% endif %}">
+          <a href="/blogs/">Blogs</a>
+        </li>
+        <li class="{% if page.url == '/volunteers/' %}active{% endif %}">
+          <a href="/volunteers/">Volunteer</a>
+        </li>
+      </ul>
+    </nav>
     <svg
-      class="w-6 h-6"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+      onclick="menuShow()"
+      onblur="menuClose()"
+      id="burger"
+      fill="#000"
+      viewBox="0 0 448 512"
+      title="bars"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h16m-7 6h7"
-      ></path>
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      />
     </svg>
-  </button>
-
-  <!-- Navigation Menu -->
-  <div
-    id="menu"
-    class="hidden md:flex z-20 flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6 text-sm font-semibold text-black absolute left-0 top-full w-full bg-white shadow-md md:relative md:top-0 md:w-auto md:shadow-none transition-all duration-300 ease-in-out opacity-0 md:opacity-100 transform md:translate-y-0 -translate-y-2"
-  >
-    <ul
-      class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0"
-    >
-      <li class="hover:bg-gray-200 p-2 rounded">
-        <a href="/" class="{% if page.url == '/' %}text-[#cd7704]{% endif %}"
-          >HOME</a
-        >
-      </li>
-
-      <li class="hover:bg-gray-200 p-2 rounded">
-        <a
-          href="/campaigns/"
-          class="{% if page.url == '/campaigns/' %}text-[#cd7704]{% endif %}"
-          >CAMPAIGN</a
-        >
-      </li>
-
-      <li class="hover:bg-gray-200 p-2 rounded">
-        <a
-          href="/blogs/"
-          class="{% if page.url == '/blogs/' %}text-[#cd7704]{% endif %}"
-          >BLOGS</a
-        >
-      </li>
-      <li class="hover:bg-gray-200 p-2 rounded">
-        <a
-          href="/about-us/"
-          class="{% if page.url == '/about-us/' %}text-[#cd7704]{% endif %}"
-          >ABOUT US</a
-        >
-      </li>
-      <li class="hover:bg-[#cc7704] text-white p-2 rounded bg-[#cd7704]">
-        <a
-          href="/volunteer/"
-          class="{% if page.url == '/volunteer/' %}text-[#cd7704]{% endif %}"
-          >VOLUNTEER <i class="fas fa-external-link-alt"></i
-        ></a>
-      </li>
-    </ul>
   </div>
-</nav>
+</main>
 
-<!-- JavaScript for Menu Toggle -->
 <script>
-  document.getElementById("menu-toggle").addEventListener("click", function () {
-    let menu = document.getElementById("menu");
-
-    // Toggle classes
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("opacity-0");
-    menu.classList.toggle("-translate-y-2");
-    menu.classList.toggle("opacity-100");
-    menu.classList.toggle("translate-y-0");
-  });
+  function menuShow() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+  function menuClose() {
+    document.getElementById("menu").classList.remove("show");
+  }
 </script>
