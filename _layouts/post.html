@@ -6,7 +6,7 @@ layout: default
   {% include post_style.css %}
 </style>
 
-<div style="width: 710px; margin: 0 auto">
+<div class="w-full md:w-[800px]" style="margin: 0 auto">
   <div class="bacon-blog-post bacon-shadow">
     <img src="{{page.image}}" class="wp-post-image mb-5" />
     <div class="ml-5">
@@ -22,6 +22,6 @@ layout: default
     </div>
     <hr class="mt-5" />
 
-    <div class="bacon-blog-post-inner">{{page.content}}</div>
+    <div class="p-6 md:p-[42px]">{{page.content}}</div>
   </div>
 </div>
