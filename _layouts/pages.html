@@ -25,15 +25,16 @@ layout: default
       </figure>
 
       <div class="post__header">
-        <time datetime="2019-11-16" class="post__time"
-          >{{post.date | date: "%B %d, %Y"}}</time
-        >
+        <p class="post__time mb-2">
+          <i class="fas fa-calendar-plus"></i> {{post.date | date: "%B %d, %Y"}}
+        </p>
+
+        <p class="post__time mb-3">
+          <i class="fas fa-tags"></i> {{post.categories}}
+        </p>
+
         <h2><a href="{{post.url}}">{{post.title}}</a></h2>
         <p>{{post.content | truncatewords: 20 }}</p>
-      </div>
-
-      <div class="post__meta">
-        <a href="#">{{post.category}}</a>
       </div>
     </div>
     <hr class="block mt-8 md:hidden" />

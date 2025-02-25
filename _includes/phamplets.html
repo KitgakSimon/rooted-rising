@@ -1,0 +1,30 @@
+<style>
+  {% include phamplets_style.css %}
+</style>
+<div class="">
+  <h1>Pamphlets</h1>
+  <div class="phamplets-container mb-10">
+    {% for item in site.data.phamplets.phamplets %}
+    <a href="{{item.url}}" target="_blank">
+      <figure class="snip1200">
+        <img
+          src="/src/images/{{ item.image }}"
+          alt="{{ item.title | downcase }}"
+        />
+        <figcaption>
+          <p>{{ item.content }}</p>
+          <div class="heading">
+            <h2>{{ item.title }}</h2>
+          </div>
+        </figcaption>
+      </figure>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  /* Demo purposes only */
+  $(".hover").mouseleave(function () {
+    $(this).removeClass("hover");
+  });
+</script>

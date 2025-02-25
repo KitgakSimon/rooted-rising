@@ -2,13 +2,26 @@
 layout: default
 ---
 
-<div class="mx-16">
-  <h2 class="text-4xl mt-10">{{ page.title }}</h2>
-  <br />
-  <p><strong>Date:</strong> {{ page.date | date: "%Y-%m-%d" }}</p>
+<style>
+  {% include post_style.css %}
+</style>
 
-  <br />
-  <p><strong>Categories:</strong> {{ page.categories | join: ", " }}</p>
-  <hr class="my-5" />
-  <div class="">{{ page.content }}</div>
+<div style="width: 710px; margin: 0 auto">
+  <div class="bacon-blog-post bacon-shadow">
+    <img src="{{page.image}}" class="wp-post-image mb-5" />
+    <div class="ml-5">
+      <h1 class="text-4xl">{{page.title}}</h1>
+      <p class="text-gray-500 text-[14px]">
+        <strong><i class="fas fa-calendar-plus"></i> Date Uploaded:</strong> {{
+        page.date | date: "%B %d, %Y" }}
+      </p>
+      <p class="text-gray-500 text-[14px]">
+        <strong><i class="fas fa-tags"></i> Categories:</strong> {{
+        page.categories | join: ", " }}
+      </p>
+    </div>
+    <hr class="mt-5" />
+
+    <div class="bacon-blog-post-inner">{{page.content}}</div>
+  </div>
 </div>

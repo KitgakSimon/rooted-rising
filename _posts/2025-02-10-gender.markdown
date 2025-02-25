@@ -2,8 +2,8 @@
 layout: post
 title: "Gender"
 image: /src/images/post-1.png
-date: 2025-02-10 00:00:00 +0000
-categories: Gender
+date: 2025-02-10
+categories: Poem
 ---
 
 Through storytelling, videos and community engagement, we challenge existing structures of gender disparities, advocate against Gender based violence, and gender parity
