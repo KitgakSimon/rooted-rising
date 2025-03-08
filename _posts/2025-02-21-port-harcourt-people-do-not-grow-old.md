@@ -2,7 +2,8 @@
 title: PORT HARCOURT PEOPLE DO NOT GROW OLD
 image: portharcourt.jpg
 date: '2025-02-21 00:00:00 +0000'
-categories: Article
+categories:
+- Article
 ---
 
 I am a Port Harcourt girl, yes, not the introvert, not the one who came to Port Harcourt to hustle, but the local kid who grew up here and has an intimate familiarity with its nooks and crannies.
