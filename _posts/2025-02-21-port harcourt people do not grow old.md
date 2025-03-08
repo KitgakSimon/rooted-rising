@@ -1,6 +1,6 @@
 ---
 title: "PORT HARCOURT PEOPLE DO NOT GROW OLD"
-image: portharcourt-people.jpg
+image: portharcourt.jpg
 date: 2025-02-21 00:00:00 +0000
 categories: Article
 author: Perfect Johndick
