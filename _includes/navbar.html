@@ -114,13 +114,17 @@
         <li class="{% if page.url == '/' %}active{% endif %}">
           <a href="/">Home</a>
         </li>
-        <li class="{% if page.url == '/campaigns/' %}active{% endif %}">
+        <li
+          class="{% if page.url == '/campaigns/' or page.url contains 'campaigns' %}active{% endif %}"
+        >
           <a href="/campaigns/">Campaigns</a>
         </li>
         <li class="{% if page.url == '/about-us/' %}active{% endif %}">
           <a href="/about-us/">About Us</a>
         </li>
-        <li class="{% if page.url == '/blogs/' %}active{% endif %}">
+        <li
+          class="{% if page.url == '/blogs/' or page.url contains 'article' or page.url contains 'article' %}active{% endif %}"
+        >
           <a href="/blogs/">Blogs</a>
         </li>
         <li class="{% if page.url == '/volunteers/' %}active{% endif %}">
