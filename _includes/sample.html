@@ -7,31 +7,30 @@
 
       <!-- Slide 1 -->
       <div class="slide slide-1">
-        <div class="overlay">
-          <h1 class="overlay-text">Overlay Text 1</h1>
-          <div class="flex justify-center mt-15">
-            <a href="/about-us" class="cursor-pointer">
-              <button
-                class="cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-bltext-white rounded-lg shadow-md group"
-              >
-                <span
-                  class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-transparent group-hover:translate-x-0 ease"
-                >
-                  <span class="flex flex-row text-[20px] items-baseline gap-5">
-                    Navigate <i class="fas fa-chevron-right"></i>
-                  </span>
-                </span>
-                <span
-                  class="absolute flex items-center text-[20px] font-semibold justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease"
-                  >About Us</span
-                >
-                <span class="relative text-base font-semibold invisible">
-                  About Us
-                </span>
-              </button>
-            </a>
+        <section
+          class="slide-content relative w-full max-w-[90%] md:max-w-[70%] mx-auto"
+        >
+          <!-- Content -->
+          <div
+            class="slide-header text-center mt-6 px-4 md:px-10 text-black flex flex-col md:flex-row justify-center items-center md:items-baseline"
+          >
+            <h1
+              class="logo-text text-[#cd7704] mt-6 font-bold text-2xl md:text-4xl"
+            >
+              Rooted Rising Initiative
+            </h1>
+            <img
+              class="hero-img w-[200px] md:w-[300px]"
+              src="src/images/hero.png"
+              alt="Hero"
+            />
           </div>
-        </div>
+          <p
+            class="hero-text text-[40px] md:text-[100px] leading-[40px] md:leading-[100px] font-extrabold text-center"
+          >
+            VOICE OF THE FRONTLINE
+          </p>
+        </section>
       </div>
 
       <!-- Slide 2 -->
@@ -41,22 +40,23 @@
           <div class="flex justify-center mt-15">
             <a href="/about-us" class="cursor-pointer">
               <button
-                class="cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-bltext-white rounded-lg shadow-md group"
+                class="carousel-btn cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-white rounded-lg shadow-md group"
               >
                 <span
                   class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-transparent group-hover:translate-x-0 ease"
                 >
                   <span class="flex flex-row text-[20px] items-baseline gap-5">
-                    Navigate <i class="fas fa-chevron-right"></i>
+                    Navigate <i class="fas fa-chevron-down"></i>
                   </span>
                 </span>
                 <span
                   class="absolute flex items-center text-[20px] font-semibold justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease"
-                  >About Us</span
                 >
-                <span class="relative text-base font-semibold invisible">
                   About Us
                 </span>
+                <span class="relative text-base font-semibold invisible"
+                  >About Us</span
+                >
               </button>
             </a>
           </div>
@@ -68,24 +68,25 @@
         <div class="overlay">
           <h1 class="overlay-text">Overlay Text 3</h1>
           <div class="flex justify-center mt-15">
-            <a href="/about-us" class="cursor-pointer">
+            <a href="/campaigns" class="cursor-pointer">
               <button
-                class="cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-bltext-white rounded-lg shadow-md group"
+                class="carousel-btn cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-white rounded-lg shadow-md group"
               >
                 <span
                   class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-transparent group-hover:translate-x-0 ease"
                 >
                   <span class="flex flex-row text-[20px] items-baseline gap-5">
-                    Navigate <i class="fas fa-chevron-right"></i>
+                    Navigate <i class="fas fa-chevron-down"></i>
                   </span>
                 </span>
                 <span
                   class="absolute flex items-center text-[20px] font-semibold justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease"
-                  >About Us</span
                 >
-                <span class="relative text-base font-semibold invisible">
-                  About Us
+                  Campaigns
                 </span>
+                <span class="relative text-base font-semibold invisible"
+                  >Campaigns</span
+                >
               </button>
             </a>
           </div>
@@ -93,24 +94,24 @@
       </div>
 
       <!-- Carousel Navigation Controls -->
-      <label for="carousel-3" class="control control-1 prev">
-        <span>&#10554;</span>
-      </label>
-      <label for="carousel-2" class="control control-1 next">
-        <span>&#10556;</span>
-      </label>
-      <label for="carousel-1" class="control control-2 prev">
-        <span>&#10554;</span>
-      </label>
-      <label for="carousel-3" class="control control-2 next">
-        <span>&#10556;</span>
-      </label>
-      <label for="carousel-2" class="control control-3 prev">
-        <span>&#10554;</span>
-      </label>
-      <label for="carousel-1" class="control control-3 next">
-        <span>&#10556;</span>
-      </label>
+      <label for="carousel-3" class="control control-1 prev"
+        ><span>&#10554;</span></label
+      >
+      <label for="carousel-2" class="control control-1 next"
+        ><span>&#10556;</span></label
+      >
+      <label for="carousel-1" class="control control-2 prev"
+        ><span>&#10554;</span></label
+      >
+      <label for="carousel-3" class="control control-2 next"
+        ><span>&#10556;</span></label
+      >
+      <label for="carousel-2" class="control control-3 prev"
+        ><span>&#10554;</span></label
+      >
+      <label for="carousel-1" class="control control-3 next"
+        ><span>&#10556;</span></label
+      >
 
       <div class="navigation">
         <label for="carousel-1" class="radio-btn radio-btn-1"></label>
@@ -122,18 +123,17 @@
 </section>
 
 <style>
+  /* Base Styles */
   .page {
-    height: 100vh;
+    height: 90vh;
     padding: 0;
     margin: auto;
     max-width: 1280px;
   }
-
   .content {
     width: 100%;
     height: 95%;
   }
-
   .carousel {
     width: 100%;
     height: 100%;
@@ -141,12 +141,10 @@
     overflow: hidden;
     position: relative;
   }
-
   .carousel input[type="radio"] {
     position: absolute;
     display: none;
   }
-
   .slide {
     width: 100%;
     height: 100%;
@@ -155,22 +153,21 @@
     transition: ease-in-out 0.6s;
     position: relative;
   }
-
   .slide-1 {
-    background: url("https://i.etsystatic.com/15857612/r/il/540084/4792907904/il_fullxfull.4792907904_h1pe.jpg");
+    background: url("https://img.freepik.com/free-photo/maple-leaf-border-background-orange-watercolor-autumn-season_53876-128735.jpg");
     background-size: cover;
+    background-position: center;
   }
-
   .slide-2 {
-    background: url("https://wallpapercave.com/wp/wp7925366.jpg");
+    background: url("/src/images/campaign-hero-1.jpg");
     background-size: cover;
+    background-position: center;
   }
-
   .slide-3 {
-    background: url("https://wallpapercave.com/wp/wp4511676.jpg");
+    background: url("/src/images/campaign-hero-1.jpg");
     background-size: cover;
+    background-position: center;
   }
-
   .control {
     width: 6rem;
     height: 6rem;
@@ -184,40 +181,32 @@
     position: absolute;
     top: 50%;
   }
-
   .next {
     right: 0;
     transform: translate(-20%, -50%);
   }
-
   .prev {
     transform: translate(20%, -50%);
   }
-
   input:nth-of-type(1):checked ~ .control-1,
   input:nth-of-type(2):checked ~ .control-2,
   input:nth-of-type(3):checked ~ .control-3 {
     display: block;
   }
-
   input:nth-of-type(1):checked ~ .navigation .radio-btn-1,
   input:nth-of-type(2):checked ~ .navigation .radio-btn-2,
   input:nth-of-type(3):checked ~ .navigation .radio-btn-3 {
-    background-color: #fff;
+    background-color: #cd7704;
   }
-
   input:nth-of-type(1):checked ~ .slide {
     transform: translateX(0);
   }
-
   input:nth-of-type(2):checked ~ .slide {
     transform: translateX(-100%);
   }
-
   input:nth-of-type(3):checked ~ .slide {
     transform: translateX(-200%);
   }
-
   .navigation {
     position: absolute;
     width: 90px;
@@ -228,39 +217,115 @@
     display: flex;
     justify-content: space-between;
   }
-
   .navigation .radio-btn {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: #cd7704;
     display: block;
     border-radius: 50%;
     border: 0.4rem solid rgba(255, 255, 255, 0.9);
   }
-
-  /* Overlay container covers the entire slide with a dark background */
+  /* Overlay Styles */
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    padding: 0 1rem;
+    text-align: center;
   }
-
-  /* Overlay text styling */
   .overlay-text {
     font-size: 3rem;
     color: #fff;
     margin: 0;
     padding: 0 1rem;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  /* Button common styling */
+  .carousel-btn {
+    /* You can add shared button styles here if needed */
+  }
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* For mobile devices */
+    .slide-header {
+      flex-direction: column;
+    }
+    .logo-text {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .hero-img {
+      width: 150px;
+      margin-top: 1rem;
+    }
+    .hero-text {
+      font-size: 30px;
+      line-height: 35px;
+      margin: 1rem 0;
+    }
+    .overlay-text {
+      font-size: 2rem;
+      padding: 0 0.5rem;
+    }
+    .carousel-btn {
+      padding: 0.8rem 1rem;
+      font-size: 16px;
+    }
+    .control {
+      width: 4rem;
+      height: 4rem;
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* For tablets */
+    .logo-text {
+      font-size: 2rem;
+    }
+    .hero-img {
+      width: 200px;
+    }
+    .hero-text {
+      font-size: 50px;
+      line-height: 55px;
+    }
+    .overlay-text {
+      font-size: 2.5rem;
+    }
+    .carousel-btn {
+      padding: 1rem 1.5rem;
+      font-size: 18px;
+    }
   }
 </style>
+
+<!-- Auto Slide Script -->
+<script>
+  let counter = 1;
+  const totalSlides = 3;
+  setInterval(() => {
+    document.getElementById("carousel-" + counter).checked = true;
+    counter++;
+    if (counter > totalSlides) {
+      counter = 1;
+    }
+  }, 5000); // Slide interval set to 5 seconds
+</script>

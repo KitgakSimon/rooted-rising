@@ -1,5 +1,5 @@
 ---
 layout: campaign-page
-title: Interventions
-permalink: /interventions/
+title: Latest Campaigns
+permalink: /latest-campaigns/
 ---
