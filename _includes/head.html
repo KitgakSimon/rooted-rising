@@ -22,7 +22,7 @@
   <meta property="og:title" content="{{ page.title }}" />
   <meta
     property="og:description"
-    content="{{ page.description | truncatewords: 50 }}"
+    content="{% if page.url == '/' %}{{ site.description }}{% else %}{{ page.content | truncatewords: 100 }}{% endif %}"
   />
   <meta
     property="og:image"
@@ -34,7 +34,10 @@
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta
+    name="twitter:description"
+    content="{% if page.url == '/' %}{{ site.description }}{% else %}{{ page.content | truncatewords: 100 }}{% endif %}"
+  />
   <meta
     name="twitter:image"
     content="{% if page.url == '/' %}{{ site.logo }}{% else %}{{ page.image }}{% endif %}"
