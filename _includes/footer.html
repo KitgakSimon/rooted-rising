@@ -15,28 +15,6 @@
           >info@rootedrising.org.ng</a
         >
       </p>
-
-      <div class="flex space-x-4 mt-4">
-        <a
-          href="https://www.linkedin.com/company/rooted-rising-initiative/"
-          target="_blank"
-          class="flex items-center space-x-2"
-        >
-          <i class="fab fa-linkedin text-2xl"></i>
-          <span class="text-sm">Rooted Rising</span>
-        </a>
-      </div>
-
-      <div class="flex space-x-4 mt-2">
-        <a
-          href="https://www.instagram.com/rootedrising1/"
-          target="_blank"
-          class="flex items-center space-x-2"
-        >
-          <i class="fab fa-instagram text-2xl"></i>
-          <span class="text-sm">@rootedrising1</span>
-        </a>
-      </div>
     </div>
 
     <!-- Newsletter Section -->
@@ -69,8 +47,8 @@
 
     <!-- Social Links (Loop through social.yml) -->
     <div class="lg:text-right">
-      <h3 class="text-lg font-bold uppercase">Navigation Links</h3>
-      <div class="flex lg:justify-end space-x-4 mt-4">
+      <h3 class="text-lg font-bold uppercase">Social Media Links</h3>
+      <div class="flex lg:justify-end space-x-4 ml-[-50px] mt-4">
         {% for social in site.data.social.social_links %}
         <a href="{{ social.url }}" target="_blank">
           <i class="{{ social.icon }} text-2xl"></i>
