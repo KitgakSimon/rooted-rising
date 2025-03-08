@@ -30,6 +30,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   everyone can thrive and achieve self-actualization.
 twitter_username: jekyllrb
 github_username: jekyll
+
+collections:
+  layout: campaign-post
+  campaigns:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: "_campaigns"
+      type: "campaigns"
+    values:
+      layout: "campaign-post"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

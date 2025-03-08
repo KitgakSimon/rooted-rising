@@ -80,3 +80,8 @@
   z-index: -1;
   box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.6);
 }
+
+.bacon-blog-post li {
+  list-style: disc;
+  margin: 20px 0 20px 20px;
+}
