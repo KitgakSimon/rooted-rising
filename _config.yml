@@ -48,6 +48,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+collections:
+  campaigns:
+    output: true
+    sidebar_label: Campaigns
+
+
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

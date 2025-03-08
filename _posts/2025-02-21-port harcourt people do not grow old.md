@@ -1,7 +1,7 @@
 ---
-title: "PORT HARCOURT PEOPLE DO NOT GROW OLD"
+title: PORT HARCOURT PEOPLE DO NOT GROW OLD
 image: portharcourt.jpg
-date: 2025-02-21 00:00:00 +0000
+date: '2025-02-21 00:00:00 +0000'
 categories: Article
 ---
 
