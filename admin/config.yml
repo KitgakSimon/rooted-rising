@@ -1,15 +1,36 @@
 backend:
-  name: git-gateway
-  branch: main # Replace with your default branch if different
+  name: oauth
+  auth_type: implicit
+  client_id: dduRVUMtcDPMDnUoB2XziPwAEImAnocx
+  auth_url: https://dev-4q5xzd07gpbrmmbi/authorize
+  app_id: 6jhuxQKldzPsJuip8PZD1IjNrgoo3HzD
+  api_root: https://api.github.com
+  base_url: https://api.netlify.com
+  site_id: 6jhuxQKldzPsJuip8PZD1IjNrgoo3HzD
+
 media_folder: "src/images" # Folder where user-uploaded files will go
 public_folder: "/src/images" # URL of the media folder
-collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
-    create: true
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+    fields: # The fields each document in this collection have
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "string",
+          required: false,
+        }
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
