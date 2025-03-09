@@ -1,8 +1,7 @@
 backend:
-  name: oauth
-  auth_type: implicit
-  client_id: dduRVUMtcDPMDnUoB2XziPwAEImAnocx
-  auth_url: https://dev-4q5xzd07gpbrmmbi/authorize
+  name: github
+  repo: KitgakSimon/rooted-rising # your GitHub username and repository name, separated by a slash
+  branch: main # optional, default value is "master"
 
 media_folder: "src/images" # Folder where user-uploaded files will go
 public_folder: "/src/images" # URL of the media folder
