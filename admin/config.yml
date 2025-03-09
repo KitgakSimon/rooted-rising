@@ -1,14 +1,15 @@
-# config.yml
-
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-  publish_mode: editorial_workflow
-media_folder: "/src/images"
-public_folder: "/src/images"
+  branch: main # Replace with your default branch if different
+media_folder: "src/images" # Folder where user-uploaded files will go
+public_folder: "/src/images" # URL of the media folder
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/"
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: Title }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
