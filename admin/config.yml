@@ -4,7 +4,7 @@ backend:
   branch: main
   open_authoring: true
 
-publish_mode: editorial_workflow
+publish_mode: simple
 
 media_folder: "src/images" # Folder where user-uploaded files will go
 public_folder: "/src/images" # URL of the media folder
