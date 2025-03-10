@@ -40,3 +40,57 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "phamplets"
+    label: "Phamplets"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Phamplets"
+        name: "phamplets"
+        file: "_data/phamplets.yml"
+        fields:
+          - label: "Phamplets List"
+            name: "phamplets"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "text" }
+              - { label: "URL", name: "url", widget: "string" }
+  - name: "purpose"
+    label: "Purpose"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Purpose Sections"
+        name: "purpose"
+        file: "_data/purpose.yml"
+        fields:
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+  - name: "voice-of-the-frontline"
+    label: "Voice of the Frontline"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Voice of the Frontline Videos"
+        name: "voice-of-the-frontline"
+        file: "_data/voice-of-the-frontline.yml"
+        fields:
+          - label: "Videos"
+            name: "videos"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "YouTube Link", name: "link", widget: "string" }
