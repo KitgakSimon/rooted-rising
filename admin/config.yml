@@ -77,7 +77,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Image", name: "image", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-  - name: "voice-of-the-frontline"
+  - name: "vofl"
     label: "Voice of the Frontline"
     delete: false
     editor:
@@ -86,7 +86,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Voice of the Frontline Videos"
         name: "voice-of-the-frontline"
-        file: "_data/voice-of-the-frontline.yml"
+        file: "_data/vofl.yml"
         fields:
           - label: "Videos"
             name: "videos"

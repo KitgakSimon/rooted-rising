@@ -49,10 +49,94 @@ defaults:
     values:
       layout: "post"
 
-collections:
-  campaigns:
-    output: true
-    sidebar_label: Campaigns
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Category(s)",
+          name: "categories",
+          widget: "select",
+          options: ["Article", "Poem"],
+        }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "campaigns" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Latest Campaigns" # Used in the UI, ie.: "New Post"
+    folder: "_campaigns" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Category(s)",
+          name: "categories",
+          widget: "select",
+          options: ["Interventions", "News"],
+        }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "phamplets"
+    label: "Phamplets"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Phamplets"
+        name: "phamplets"
+        file: "_data/phamplets.yml"
+        fields:
+          - label: "Phamplets List"
+            name: "phamplets"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "text" }
+              - { label: "URL", name: "url", widget: "string" }
+  - name: "purpose"
+    label: "Purpose"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Purpose Sections"
+        name: "purpose"
+        file: "_data/purpose.yml"
+        fields:
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+  - name: "voice-of-the-frontline"
+    label: "Voice of the Frontline"
+    delete: false
+    editor:
+      preview: false
+    format: "yml"
+    files:
+      - label: "Voice of the Frontline Videos"
+        name: "voice-of-the-frontline"
+        file: "_data/voice-of-the-frontline.yml"
+        fields:
+          - label: "Videos"
+            name: "videos"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "YouTube Link", name: "link", widget: "string" }
+
 
 jekyll_admin:
   hidden: false
