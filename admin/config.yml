@@ -2,8 +2,7 @@ backend:
   name: github
   repo: KitgakSimon/rooted-rising
   branch: main
-  open_authoring: true
-
+  # open_authoring: true
 publish_mode: simple
 
 media_folder: "src/images" # Folder where user-uploaded files will go
