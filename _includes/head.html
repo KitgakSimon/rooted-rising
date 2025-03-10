@@ -24,10 +24,7 @@
     property="og:description"
     content="{% if page.url == '/' %}{{ site.description }}{% else %}{{ page.content markdownify | strip_html | strip_newlines | truncate: 100 }}{% endif %}"
   />
-  <meta
-    property="og:image"
-    content="{% if page.url contains 'campaign' %}/src/images/campaigns/{{page.image}}{% elsif page.url contains 'article' or page.url contains 'poem' %}/src/images/blogs-poems/{{page.image}}{% else %}{{ site.logo }}{% endif %}"
-  />
+  <meta property="og:image" content="/src/images/{{page.image}}" />
   <meta property="og:url" content="{{ page.url }}" />
   <meta property="og:type" content="website" />
 
@@ -38,9 +35,6 @@
     name="twitter:description"
     content="{% if page.url == '/' %}{{ site.description }}{% else %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 100 }}{% endif %}"
   />
-  <meta
-    name="twitter:image"
-    content="{% if page.url contains 'campaign' %}/src/images/campaigns/{{page.image}}{% elsif page.url contains 'article' or page.url contains 'poem' %}/src/images/blogs-poems/{{page.image}}{% else %}{{ site.logo }}{% endif %}"
-  />
+  <meta name="twitter:image" content="/src/images/{{page.image}}" />
   <meta name="twitter:site" content="@your_twitter_handle" />
 </head>
