@@ -25,5 +25,48 @@
         content.style.display = "block";
       });
     </script>
+    <script>
+      let searchIndex = [];
+
+      async function fetchSearchIndex() {
+        try {
+          const response = await fetch("/search.json");
+          searchIndex = await response.json();
+        } catch (error) {
+          console.error("Error loading search index:", error);
+        }
+      }
+
+      function liveSearch() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let suggestions = document.getElementById("suggestions");
+        suggestions.innerHTML = "";
+        suggestions.style.display = "none";
+
+        if (input.length === 0) {
+          return;
+        }
+
+        let matches = searchIndex.filter((item) =>
+          item.title.toLowerCase().includes(input)
+        );
+
+        if (matches.length > 0) {
+          suggestions.style.display = "block";
+          matches.slice(0, 5).forEach((match) => {
+            let li = document.createElement("li");
+            li.classList.add("suggestion-item");
+            li.innerHTML = `
+              <a href="${match.url}" class="suggestion-title">${match.title}</a>
+              <div class="suggestion-date">${match.date}</div>
+              <div class="suggestion-content">${match.content}...</div>
+            `;
+            suggestions.appendChild(li);
+          });
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", fetchSearchIndex);
+    </script>
   </body>
 </html>
