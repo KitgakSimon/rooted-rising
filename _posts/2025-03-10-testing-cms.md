@@ -2,7 +2,7 @@
 title: Testing CMS
 date: 2025-03-08T12:26:00.000Z
 categories: Article
-image: /src/images/video.png
+image: /src/images/bread-not-barrels.png
 ---
 Hello world
 
