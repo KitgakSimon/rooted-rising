@@ -57,6 +57,26 @@ collections:
 jekyll_admin:
   hidden: false
 
+plugins:
+  - jekyll-paginate-v2  # Use this instead of jekyll-paginate
+
+pagination:
+  enabled: true
+  per_page: 5  # Default pagination per page
+  sort_field: "date"
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+  # Pagination for /blogs/
+  blog:
+    enabled: true
+    per_page: 5
+    title: "Blog"
+    permalink: "/blogs/:num/"
+    indexpage: "blogs.html"
+  
 
 
 # Exclude from processing.

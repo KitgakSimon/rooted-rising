@@ -144,6 +144,7 @@ body {
 .post {
   position: relative;
   padding: 1.6em;
+  margin: 10px;
 }
 
 .post:hover:after {
@@ -272,4 +273,80 @@ body {
   .post-list__post:nth-child(even) {
     background-color: transparent;
   }
+}
+.pagination {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 200px;
+}
+
+.page-number {
+  cursor: pointer;
+  background-color: white;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.pagination .active {
+  font-size: 1.3em;
+  height: 40px;
+  width: 40px;
+  background-color: #0057b3;
+  color: white;
+}
+
+button {
+  width: 120px;
+  padding: 8px 16px;
+  background-color: #ffffff00;
+  color: #0057b3;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button:hover {
+  color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ffffff00;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+#prevPage {
+  margin-right: 20px;
+}
+
+#nextPage {
+  margin-left: 20px;
+}
+
+.arrow {
+  font-size: 1.2em;
+}
+
+.nav-text {
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
 }
