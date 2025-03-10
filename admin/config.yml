@@ -85,7 +85,7 @@ collections: # A list of collections the CMS should be able to edit
     format: "yml"
     files:
       - label: "Voice of the Frontline Videos"
-        name: "voice-of-the-frontline"
+        name: "vofl" # <== Change this to match the collection name
         file: "_data/vofl.yml"
         fields:
           - label: "Videos"
