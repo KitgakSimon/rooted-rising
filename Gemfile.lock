@@ -13,8 +13,12 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.1-x64-mingw-ucrt)
+    ffi (1.17.1-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.29.3-x64-mingw-ucrt)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -46,7 +50,6 @@ GEM
       sinatra-contrib (~> 4.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-paginate (1.1.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-sass-converter (3.1.0)
@@ -96,6 +99,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.85.0-x64-mingw-ucrt)
       google-protobuf (~> 4.29)
+    sass-embedded (1.85.0-x86_64-linux-gnu)
+      google-protobuf (~> 4.29)
     sinatra (4.1.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
@@ -122,13 +127,13 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.4.1)
   jekyll-admin
   jekyll-feed (~> 0.12)
-  jekyll-paginate
   jekyll-paginate-v2
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
