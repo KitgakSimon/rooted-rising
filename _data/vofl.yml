@@ -2,7 +2,12 @@ videos:
   - title: Oil Extraction and Water Pollution
     link: https://www.youtube.com/embed/dy-baZfnC-c?si=qi38nrQ_swvxAdXY
   - title: 16 Days of Activism (Gender Based Violence)
-    link: https://youtu.be/veRrjFfKugY?si=uGqGxczNZvLC9q-_
+    link: <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/veRrjFfKugY?si=5SvOie0HUiDgQ9H6"
+      title="YouTube video player" frameborder="0" allow="accelerometer;
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+      web-share" referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
   - title: What is Climate Change?
     link: https://www.youtube.com/embed/7UMDpY263y8?si=tmghp3cmx9MEi-YB
   - title: We are all Eyewitnesses
