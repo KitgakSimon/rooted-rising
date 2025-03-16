@@ -63,6 +63,7 @@ jekyll_admin:
 
 plugins:
   - jekyll-paginate-v2  # Use this instead of jekyll-paginate
+  - jekyll-sitemap
 
 pagination:
   enabled: true
