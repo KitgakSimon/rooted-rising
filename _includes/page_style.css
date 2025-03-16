@@ -311,7 +311,7 @@ body {
   color: white;
 }
 
-button {
+.pagination button {
   width: 120px;
   padding: 8px 16px;
   background-color: #ffffff00;
@@ -324,11 +324,11 @@ button {
   justify-content: space-between;
 }
 
-button:hover {
+.pagination button:hover {
   color: #0056b3;
 }
 
-button:disabled {
+.pagination button:disabled {
   background-color: #ffffff00;
   color: #ccc;
   cursor: not-allowed;
