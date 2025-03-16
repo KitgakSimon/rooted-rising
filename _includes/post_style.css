@@ -76,7 +76,19 @@
   box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.6);
 }
 
+.bacon-blog-post ol li {
+  list-style-type: decimal;
+}
+.bacon-blog-post ul li {
+  list-style-type: disc;
+}
+.bacon-blog-post ol li::marker {
+  font-weight: bold;
+}
+.bacon-blog-post ul li::marker {
+  font-weight: bold;
+}
+
 .bacon-blog-post li {
-  list-style: disc;
-  margin: 20px 0 20px 20px;
+  margin: 10px 0 10px 20px;
 }
