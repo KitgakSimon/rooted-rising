@@ -1,12 +1,38 @@
 sections:
-  - title: "Gender"
-    image: "/src/images/gender.png"
-    description: "Through storytelling, videos and community engagement, we challenge existing structures of gender disparities, advocate against Gender based violence, and gender parity."
+  - title: Gender Justice
+    image: /src/images/gender.png
+    description: At Rooted Rising, gender justice is at the heart of our mission. We
+      recognize that climate change, environmental degradation, and social
+      injustices disproportionately affect women and marginalized genders,
+      particularly in frontline communities. Our commitment to gender justice
+      means amplifying voices that are often silenced, ensuring equal
+      participation in decision-making, and advocating for policies that address
+      systemic inequalities. Through our initiatives—whether in storytelling,
+      advocacy, or community engagement—we strive to create spaces where gender
+      equity is not just a goal but a lived reality. By integrating gender
+      justice into our work, we stand for a world where everyone, regardless of
+      identity, has the power, resources, and opportunities to thrive in a
+      sustainable future.
+  - title: Environment Justice
+    image: /src/images/environment.png
+    description: >+2
+       The environment is more than a cause—it is a matter of justice. We recognize that environmental degradation disproportionately affects marginalized communities, particularly those in oil-sacrificed zones and vulnerable ecosystems. Our commitment to justice means advocating for policies and actions that protect both people and nature, ensuring that communities have access to clean air, safe water, and a sustainable future. Through storytelling, advocacy, and grassroots engagement, we amplify voices from the frontlines of environmental harm, demanding accountability from polluters and decision-makers. At the heart of our mission is the belief that a just transition to a greener world must be inclusive, equitable, and rooted in the realities of those most affected.
 
-  - title: "Environment"
-    image: "/src/images/environment.png"
-    description: "We champion environmental campaigns, create awareness and amplify the voices of frontline communities through podcast, media, and community engagement."
 
-  - title: "Society"
-    image: "/src/images/society.png"
-    description: "We believe in a society where culture, religion, family, and politics would be a driving force for change."
+
+
+
+
+
+  - title: "Society "
+    image: /src/images/society.png
+    description: At Rooted Rising, society is at the heart of our mission, driven by
+      the belief that justice must guide our advocacy for people and the planet.
+      Through storytelling, education, and direct engagement, we empower
+      communities to challenge injustices, demand systemic change, and co-create
+      solutions that prioritize human and ecological well-being. By fostering
+      awareness, advocating for policies that address structural inequalities,
+      and supporting grassroots movements, we work towards a future where every
+      individual—regardless of background—has access to clean air, safe water,
+      and a sustainable environment. Because justice is not just an ideal; it is
+      the foundation for true societal progress.
