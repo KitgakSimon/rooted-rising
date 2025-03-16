@@ -1,6 +1,6 @@
 ---
 title: Urban Farming Education
-date: 2025-03-16T11:56:00.000Z
+date: 2024-10-16T12:56:00.000Z
 categories: Interventions
 image: /src/images/whatsapp-image-2025-03-12-at-18.08.58_43a30e6d.jpg
 ---
