@@ -9,15 +9,23 @@ layout: default
   <!-- <hr class="my-12" />
   {% include campaigns.html %} -->
   <hr class="mb-5 mt-12" />
-  <h1 class="mx-10 font-bold">CAMPAIGNS</h1>
+  <h1 class="mx-10 font-bold" data-aos="fade-right">CAMPAIGNS</h1>
   <hr class="mb-12 mt-5" />
-  <div class="mx-10 font-bold">{% include voice-of-the-frontline.html %}</div>
+  <div class="mx-10 font-bold" data-aos="zoom-in-up">
+    {% include voice-of-the-frontline.html %}
+  </div>
   <hr class="my-12" />
-  {% include campaigns-home.html %}
+  <div
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+  >
+    > {% include campaigns-home.html %}
+  </div>
   <!-- <hr class="my-12" />
   <div class="mx-10 font-bold">{% include phamplets.html %}</div> -->
   <hr class="my-12" />
-  {% include blog-post.html %}
+  <div data-aos="zoom-out">>{% include blog-post.html %}</div>
   <hr class="my-12" />
-  {% include volunteers.html %}
+  <div data-aos="zoom-out-right">{% include volunteers.html %}</div>
 </div>
