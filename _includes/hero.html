@@ -7,81 +7,22 @@
 
       <!-- Slide 1 -->
       <div class="slide slide-1">
-        <section
-          class="slide-content relative w-full max-w-[90%] md:max-w-[70%] mx-auto"
-        >
-          <!-- Content -->
-          <div
-            class="slide-header text-center mt-6 px-4 md:px-10 text-black flex flex-col md:flex-row justify-center items-center md:items-baseline"
-          >
-            <h1
-              class="logo-text text-[#cd7704] mt-6 font-bold text-2xl md:text-4xl"
-            >
-              Rooted Rising Initiative
-            </h1>
-            <img
-              class="hero-img w-[200px] md:w-[300px]"
-              src="src/images/{{site.hero-image-1}}"
-              alt="Hero"
-            />
-          </div>
-          <p
-            class="hero-text text-[40px] md:text-[100px] leading-[40px] md:leading-[100px] font-extrabold text-center"
-          >
-            VOICE OF THE FRONTLINE
-          </p>
-        </section>
+        <div class="overlay">
+          <div class="flex justify-center mt-15"></div>
+        </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="slide slide-2">
         <div class="overlay">
-          <div class="flex justify-center mt-15">
-            <a href="/about-us" class="cursor-pointer">
-              <button
-                class="carousel-btn cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition ease-out border-2 border-white rounded-lg shadow-md group"
-              >
-                <span
-                  class="absolute inset-0 flex items-center justify-center w-full h-full text-white -translate-x-full bg-transparent group-hover:translate-x-0 ease"
-                >
-                </span>
-                <span
-                  class="absolute flex items-center text-[20px] font-semibold justify-center w-full h-full text-white hover:bg-[#cd7704] transition-all transform"
-                >
-                  About Us
-                </span>
-                <span class="relative text-base font-semibold invisible"
-                  >About Us</span
-                >
-              </button>
-            </a>
-          </div>
+          <div class="flex justify-center mt-15"></div>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="slide slide-3">
         <div class="overlay">
-          <div class="flex justify-center mt-15">
-            <a href="/campaigns" class="cursor-pointer">
-              <button
-                class="carousel-btn cursor-pointer relative inline-flex items-center justify-center px-12 py-4 mt-10 overflow-hidden font-medium text-white transition ease-out border-2 border-white rounded-lg shadow-md group"
-              >
-                <span
-                  class="absolute inset-0 flex items-center justify-center w-full h-full text-white -translate-x-full bg-transparent group-hover:translate-x-0 ease"
-                >
-                </span>
-                <span
-                  class="absolute flex items-center text-[20px] font-semibold justify-center w-full h-full hover:bg-[#cd7704] text-white transition-all transform"
-                >
-                  Campaigns
-                </span>
-                <span class="relative text-base font-semibold invisible"
-                  >Campaigns</span
-                >
-              </button>
-            </a>
-          </div>
+          <div class="flex justify-center mt-15"></div>
         </div>
       </div>
 
@@ -97,7 +38,7 @@
 <style>
   /* Base Styles */
   .page {
-    height: 90vh;
+    height: 100vh;
     padding: 0;
     margin: auto;
     max-width: 1280px;
@@ -126,19 +67,22 @@
     position: relative;
   }
   .slide-1 {
-    background: url("https://img.freepik.com/free-photo/maple-leaf-border-background-orange-watercolor-autumn-season_53876-128735.jpg");
+    background: url("/src/images/{{site.hero-image-1}}");
     background-size: cover;
     background-position: center;
+    opacity: 1;
   }
   .slide-2 {
     background: url("/src/images/{{site.hero-image-2}}");
     background-size: cover;
     background-position: center;
+    opacity: 1;
   }
   .slide-3 {
     background: url("/src/images/{{site.hero-image-3}}");
     background-size: cover;
     background-position: center;
+    opacity: 1;
   }
   .control {
     width: 6rem;
@@ -198,31 +142,7 @@
     border-radius: 50%;
     border: 0.4rem solid rgba(255, 255, 255, 0.9);
   }
-  /* Overlay Styles */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  .overlay-text {
-    margin: 0;
-    padding: 0 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-  /* Button common styling */
-  .carousel-btn {
-    /* You can add shared button styles here if needed */
-  }
+
   .slide-content {
     display: flex;
     flex-direction: column;

@@ -31,9 +31,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: jekyllrb
 github_username: jekyll
 
-hero-image-1: hero.png
-hero-image-2: about-us.jpg
-hero-image-3: campaign-hero-1.jpg
+hero-image-1: 1.png
+hero-image-2: 2.png
+hero-image-3: 3.png
 
 collections:
   layout: campaign-post
