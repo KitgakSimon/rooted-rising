@@ -1,0 +1,43 @@
+<div>
+  <div class="flex flex-row justify-between mx-10 items-center">
+    <span class="text-xl md:text-3xl font-bold">Voice of the Frontline</span>
+    <span
+      class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-[#cc7155] group-hover:w-3/6"
+    ></span>
+    <span
+      class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-[#cc7155] group-hover:w-3/6"
+    ></span>
+
+    <a
+      href="/campaigns/#vofl"
+      class="text-base font-semibold m-6 group relative w-max"
+    >
+      <span
+        class="px-1 relative z-10 group-hover:text-white text-xl md:text-3xl"
+        >View All</span
+      >
+      <span
+        class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#cc7155] z-0 group-hover:h-full"
+      ></span>
+    </a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    {% for video in site.data.vofl.videos | limit: 4 %}
+    <div class="flex flex-col items-center">
+      <iframe
+        width="560"
+        height="315"
+        class="w-full h-64 rounded-lg"
+        src="{{ video.link }}"
+        title="{{ video.title }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+      <h3 class="text-center font-semibold mt-2">{{ video.title }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+</div>
