@@ -2,7 +2,7 @@
 title: DEALS BEHIND THE DRILLS
 date: 2025-04-27T23:24:00.000Z
 categories: Interventions
-image: /src/images/tt.png
+image: /src/images/wfc7si3g.png
 ---
 
 
