@@ -1,5 +1,5 @@
 ---
-title: NIGER DELTA ALTERNATIVES CONVERGENCE MANIVESTO
+title: NIGER DELTA ALTERNATIVES CONVERGENCE MANIFESTO
 date: 2025-05-12T18:01:00.000Z
 categories: Interventions
 image: /src/images/rooted-rising-inititiative.png
