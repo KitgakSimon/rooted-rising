@@ -1,7 +1,7 @@
 ---
 title: "ROOTED RISING LAUNCHES THE \"WOMAN CRUSHED WEDNESDAY STORIES'' "
 date: 2025-06-25T08:07:00.000+01:00
-categories: News
+categories: Interventions
 image: /src/images/wcw.png
 ---
 Every Wednesday, we rise to tell the women who, have been crushed by the twin weights of climate chaos and patriarchy.
