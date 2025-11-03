@@ -15,4 +15,4 @@ It was eye-opening to see how technology can both spread truth and twist it, how
 The big question we left with was simple:
 If there is an information warfare, how do we own the battlefield?
 
-We would love to hear your thoughts.
+We would love to hear your thoughts in the comment section.
