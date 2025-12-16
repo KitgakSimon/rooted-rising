@@ -25,7 +25,3 @@ Through these actions, Rooted Rising used storytelling, collaboration, and educa
 For us, the 16 Days of Activism was not just a campaign — it was a commitment to keep listening, speaking up, and creating safer spaces for women and girls.
 
 Find Videos and Pictures on our social media pages.
-
-https://www.linkedin.com/company/rooted-rising-initiative/
-
-https://www.youtube.com/embed/lmjeOTbvzyQ?si=Nfdsrf6um3LJC-Lh
