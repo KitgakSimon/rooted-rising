@@ -32,7 +32,7 @@ Omoregie discussed strategies for using visual and immersive storytelling, parti
 
 **Upcycling and Community Data Use**
 
-Bilkisu explained the concept of upcycling, emphasizing its cultural relevance in Africa and its positive impact on livelihoods and the environment. She highlighted the importance of intentionality, material sourcing, repurposing skills, and market strategies for successful upcycling businesses. Onyekachi discussed the existing technological capacity in communities to collect and use data for action, using examples of environmental documentation and legal cases. He emphasized the importance of understanding and utilizing available tools, such as smartphones, and encouraged communities to build tools that fit their needs. Nneka concluded by asking about common mistakes in telling frontline or vulnerable stories, but the transcript ended before this question was answered.
+Bilkisu explained the concept of upcycling, emphasizing its cultural relevance in Africa and its positive impact on livelihoods and the environment. She highlighted the importance of intentionality, material sourcing, repurposing skills, and market strategies for successful upcycling businesses. Onyekachi discussed the existing technological capacity in communities to collect and use data for action, using examples of environmental documentation and legal cases. He emphasized the importance of understanding and utilizing available tools, such as smartphones, and encouraged communities to build tools that fit their needs. 
 
 **Storytelling for Community Impact**
 
