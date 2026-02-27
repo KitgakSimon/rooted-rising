@@ -1,5 +1,5 @@
 ---
-title: 16 DAYS ACTIVISM
+title: 16 DAYS OF ACTIVISM
 date: 2025-12-16T08:20:00.000+01:00
 categories: Interventions
 image: /src/images/16-days.png
